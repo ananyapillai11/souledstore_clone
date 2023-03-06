@@ -1,8 +1,11 @@
 console.log("Form Validation");
 
 const Name = document.getElementById("name");
+const namel = document.getElementById("namel");
 const email = document.getElementById("email");
+const emaill = document.getElementById("emaill");
 const phone = document.getElementById("phone");
+const phonel = document.getElementById("phonel")
 let validEmail  = false;
 let validUser  = false;
 let validPhone  = false;
@@ -15,12 +18,12 @@ Name.addEventListener('blur',()=>{
     if(regex.test(str)){
         validUser = true;
         console.log("It Matched");
-        Name.classList.remove('is-invalid');
+        namel.classList.remove('iname');
     }
 
     else{
         console.log("Not Matched");
-        Name.classList.add('is-invalid');
+        namel.classList.add('iname');
     }
 });
 
@@ -33,12 +36,12 @@ email.addEventListener('blur',()=>{
     if(regex.test(str)){
         validEmail = true;
         console.log("It Matched");
-        email.classList.remove('is-invalid');
+        emaill.classList.remove('iemail');
     }
 
     else{
         console.log("Not Matched");
-        email.classList.add('is-invalid');
+        emaill.classList.add('iemail');
     }
 })
 
@@ -50,12 +53,12 @@ phone.addEventListener('blur',()=>{
     if(regex.test(str)){
         validPhone = true;
         console.log("It Matched");
-        phone.classList.remove('is-invalid');
+        phonel.classList.remove('iphone');
     }
 
     else{
         console.log("Not Matched");
-        phone.classList.add('is-invalid');
+        phonel.classList.add('iphone');
     }
 })
 
