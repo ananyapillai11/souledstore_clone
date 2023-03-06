@@ -12,7 +12,7 @@ let validPhone  = false;
 
 Name.addEventListener('blur',()=>{
     console.log("name is blurred");
-    let regex = /^[a-zA-Z]([0-9a-zA-Z]){3,10}$/;
+    let regex = /^[a-zA-Z]([0-9a-zA-Z\s]){3,10}$/;
     let str = Name.value;
     console.log(regex,str);
     if(regex.test(str)){
